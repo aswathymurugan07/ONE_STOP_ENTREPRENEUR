@@ -1,0 +1,32 @@
+<div>
+    <a href="/getdetails">Get Details</a>
+    </div>
+    <hr>
+    
+    <% if(details!=null) { %>
+    <table>
+    <tr>
+        <th>Nam</th>
+        <th>origin </th>
+        
+    </tr>
+    <% details.forEach(function(item){ %>
+    <tr>
+        <td><%= item.route%></td>
+        <td><%= item.origin %></td>
+        <td><%= item.destination%></td>
+        <td><%= item.estimatedTimeOfArrival %></td>
+        <td><%= item.date%></td>
+        <td><%= item.time%></td>
+    
+    </tr>
+    <% }) %>
+    </table>
+    <% } %>
+    Share
+    Follow
+    edited May 20, 2019 at 9:43
+    answered May 20, 2019 at 9:33
+    YouBee's user avatar
+    YouBee
+    1,911
